@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 output=open('out.txt', 'w')
-img = cv2.imread("hexa.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("hex.jpeg", cv2.IMREAD_GRAYSCALE)
 _, threshold = cv2.threshold(img, 240, 255, cv2.THRESH_BINARY)
 _, contours, _ = cv2.findContours(threshold, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
